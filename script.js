@@ -107,11 +107,14 @@ btnFetch.addEventListener("click", function(){
     getLocation();
 })
 
-window.addEventListener('beforeunload', function(event) {
+window.addEventListener('load', function(event) {
     // Your code here
     homeContainer.className='Hcontainer';
     dataDiv.className='hide';
+    console.log("i ran") ;
+     console.log(dataDiv);
   });
+
 
 
 
