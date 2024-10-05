@@ -71,7 +71,7 @@ function embedData(data,lat,lon)
 }
 async function getWeather(lat,lon) {
     try{
-        let  response = await fetch(`http://api.weatherapi.com/v1/current.json?key=1c3a27b7dbf44943bef71808240510&q=${lat},${lon}&aqi=no`)
+        let  response = await fetch(`https://api.weatherapi.com/v1/current.json?key=1c3a27b7dbf44943bef71808240510&q=${lat},${lon}&aqi=no`)
         if(response.status!=200)
         {
             throw new Error("cant access  the data");
