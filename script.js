@@ -1,6 +1,7 @@
 let btnFetch= document.getElementById("fetch");
 let homeContainer= document.getElementById("home-container");
 let dataDiv= document.getElementById("dataDiv");
+dataDiv.className='hide';
 let lat='';
 let longi='';
 console.log(homeContainer);
@@ -107,13 +108,13 @@ btnFetch.addEventListener("click", function(){
     getLocation();
 })
 
-window.addEventListener('load', function(event) {
+/*window.addEventListener('load', function(event) {
     // Your code here
     homeContainer.className='Hcontainer';
     dataDiv.className='hide';
     console.log("i ran") ;
      console.log(dataDiv);
-  });
+  });*/
 
 
 
